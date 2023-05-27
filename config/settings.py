@@ -27,7 +27,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = []
 
-
 # Application definition
 
 INSTALLED_APPS = [
@@ -38,14 +37,23 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
 
+    # Tailswind
+    'tailwind', # add tailwind app
+    'theme', # add tailwind created theme
+    'django_browser_reload', # part of tailwind
+
     # My apps
     'app.depot.apps.DepotConfig',
 ]
+
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
+
+    "django_browser_reload.middleware.BrowserReloadMiddleware",
+
     'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
@@ -126,3 +134,21 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+
+# NEW
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
+
+TAILWIND_APP_NAME = 'theme'
+
+
+# 
+
+""" Steps adding tht npm path
+1. (venv3942) hp@ING:~ which npm
+2. \e\workspace\laragon\bin\nodejs\node-v14175\npm
+3. Turn it into like the one bellow:
+"""
+NPM_BIN_PATH = r"E:\workspace\laragon\bin\nodejs\node-v14175\npm.cmd"

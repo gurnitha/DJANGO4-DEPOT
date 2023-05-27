@@ -28,3 +28,21 @@ Membuat aplikasi DEPOT versi Django 4
         modified:   README.md
         modified:   app/depot/apps.py
         modified:   config/settings.py
+
+
+#### 1.3 Install css tailwind
+
+        modified:   README.md
+        modified:   config/settings.py
+        modified:   config/urls.py
+        new file:   theme/__init__.py
+        new file:   theme/apps.py
+        new file:   theme/static_src/.gitignore
+        new file:   theme/static_src/bs.config.js
+        new file:   theme/static_src/package-lock.json
+        new file:   theme/static_src/package.json
+        new file:   theme/static_src/postcss.config.js
+        new file:   theme/static_src/src/styles.css
+        new file:   theme/static_src/tailwind.config.js
+        new file:   theme/templates/base.html
+

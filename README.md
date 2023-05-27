@@ -1,2 +1,5 @@
 # DJANGO4-DEPOT
 Membuat aplikasi DEPOT versi Django 4
+
+
+## 1. MEMBUAT DJANGO PROJECT DAN APP

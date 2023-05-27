@@ -21,3 +21,10 @@ Membuat aplikasi DEPOT versi Django 4
         new file:   config/urls.py
         new file:   config/wsgi.py
         new file:   manage.py
+
+
+#### 1.2 Register depot pada settings.py di dalam config
+
+        modified:   README.md
+        modified:   app/depot/apps.py
+        modified:   config/settings.py
